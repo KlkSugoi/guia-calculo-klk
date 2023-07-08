@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guía de Estudio de Cálculo Diferencial</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f8fa;
+      transition: background-color 0.3s ease;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #ffffff;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-top: 40px;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    .code {
+      background-color: #f5f8fa;
+      padding: 10px;
+      font-family: Consolas, monospace;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .dark-mode {
+      background-color: #333333;
+      color: #ffffff;
+    }
+
+    .dark-mode .container,
+    .dark-mode body {
+      background-color: #222222;
+    }
+
+    .dark-mode .code {
+      background-color: #1a1a1a;
+      color: #ffffff;
+    }
+
+    .dark-mode button {
+      background-color: #333333;
+      color: #ffffff;
+    }
+
+    .dark-mode button:hover {
+      background-color: #555555;
+    }
+
+    /* Estilos del botón de modo oscuro */
+    #dark-mode-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      background-color: #ffffff;
+      color: #333333;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .dark-mode #dark-mode-btn {
+      background-color: #333333;
+      color: #ffffff;
+    }
+
+    .dark-mode #dark-mode-btn:hover {
+      background-color: #555555;
+    }
+
+    /* Estilos adicionales para mejorar la apariencia */
+    #dark-mode-btn:focus {
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Guía de Estudio de Cálculo Diferencial</h1>
+
+    <h2>Dominio y Rangos</h2>
+    <p>El dominio de una función es el conjunto de valores para los cuales la función está definida. Los rangos, por otro lado, son los valores que la función puede tomar.</p>
+    <p>A continuación se muestra un ejemplo de cómo determinar el dominio y los rangos de una función:</p>
+    <div class="code">
+      <p>// Ejemplo de función</p>
+      <p>function f(x) &#123;</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;return x * x;</p>
+      <p>&#125;</p>
+      <p>// Paso 1: Determinar el dominio</p>
+      <p>// El dominio de la función f(x) = x * x es (-∞, ∞) porque está definida para cualquier número real.</p>
+      <p>// Paso 2: Determinar el rango</p>
+      <p>// El rango de la función f(x) = x * x es [0, ∞) porque el resultado siempre es igual o mayor que cero.</p>
+    </div>
+
+    <h2>Límites de Cálculo Diferencial</h2>
+    <p>Los límites son fundamentales en el cálculo diferencial. Representan el comportamiento de una función cuando se acerca a un determinado valor.</p>
+    <p>A continuación se muestra un ejemplo de cómo calcular un límite:</p>
+    <div class="code">
+      <p>// Ejemplo de límite</p>
+      <p>lim(x -&gt; 2) (x^2 + 3x - 2) = 8</p>
+      <p>// Paso 1: Sustituir el valor de x en la función</p>
+      <p>// (2^2 + 3*2 - 2)</p>
+      <p>// Paso 2: Calcular el resultado</p>
+      <p>// (4 + 6 - 2) = 8</p>
+    </div>
+
+    <h2>Composición de Funciones</h2>
+    <p>La composición de funciones es una operación en la que se aplica una función sobre otra función.</p>
+    <p>A continuación se muestra un ejemplo de cómo componer funciones:</p>
+    <div class="code">
+      <p>// Ejemplo de composición de funciones</p>
+      <p>h(x) = f(g(x))</p>
+      <p>// Paso 1: Evaluar g(x)</p>
+      <p>// g(x) = ...</p>
+      <p>// Paso 2: Sustituir el resultado de g(x) en f(x)</p>
+      <p>// f(g(x)) = f(...) = ...</p>
+    </div>
+
+    <h2>Factorizar</h2>
+    <p>Factorizar una expresión algebraica significa escribirla como un producto de factores más simples.</p>
+    <p>A continuación se muestra un ejemplo de cómo factorizar una expresión:</p>
+    <div class="code">
+      <p>// Ejemplo de factorización</p>
+      <p>x^2 + 5x + 6 = (x + 2)(x + 3)</p>
+      <p>// Paso 1: Buscar dos números que sumen 5 y multipliquen 6</p>
+      <Los números 2 y 3 cumplen con estas condiciones</p>
+      <p>// Paso 2: Descomponer el término lineal</p>
+      <p>// x^2 + 2x + 3x + 6</p>
+      <p>// Paso 3: Agrupar los términos en común</p>
+      <p>// (x^2 + 2x) + (3x + 6)</p>
+      <p>// Paso 4: Factorizar cada grupo</p>
+      <p>// x(x + 2) + 3(x + 2)</p>
+      <p>// Paso 5: Extraer el factor común</p>
+      <p>// (x + 2)(x + 3)</p>
+    </div>
+
+    <h2>Derivar por 4 Pasos</h2>
+    <p>La derivación es una operación fundamental en el cálculo diferencial. Se utiliza para encontrar la tasa de cambio instantánea de una función en un punto dado.</p>
+    <p>A continuación se muestra un ejemplo de cómo derivar una función utilizando el método de los 4 pasos:</p>
+    <div class="code">
+      <p>// Ejemplo de derivación</p>
+      <p>// Paso 1: Encontrar la función derivada de cada término</p>
+      <p>2x^3 = 6x^2</p>
+      <p>3x^2 = 6x</p>
+      <p>// Paso 2: Simplificar</p>
+      <p>6x^2 + 6x</p>
+      <p>// Paso 3: Combinar términos similares</p>
+      <p>6x^2 + 6x</p>
+      <p>// Paso 4: Obtener la función derivada final</p>
+      <p>f'(x) = 6x^2 + 6x</p>
+    </div>
+
+    <h2>Derivar</h2>
+    <p>La derivación también se puede realizar utilizando reglas específicas para diferentes tipos de funciones, como las funciones trigonométricas o exponenciales.</p>
+    <p>A continuación se muestra un ejemplo de cómo derivar una función:</p>
+    <div class="code">
+      <p>// Ejemplo de derivación</p>
+      <p>f(x) = sin(x)</p>
+      <p>f'(x) = cos(x)</p>
+    </div>
+  </div>
+
+  <button id="dark-mode-btn">&#9728;</button> <!-- Símbolo para Modo Oscuro: ☀️ -->
+
+  <script>
+    const darkModeBtn = document.getElementById('dark-mode-btn');
+    const body = document.body;
+    const container = document.querySelector('.container');
+
+    darkModeBtn.addEventListener('click', function() {
+      body.classList.toggle('dark-mode');
+      container.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+</html>
